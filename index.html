@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <link rel="shortcut icon" href="/dist/image/icons8-home-48.png" type="image/x-icon">
+    <title>Shionhouse.com</title>
+</head>
+
+<body onload="myfunction()">
+    <div id="loader">
+        <img src="/dist/image/Spinner-2.gif" alt="spinner">
+    </div>
+    <!-- ----------------Header-section ---------------- -->
+    <header class="header">
+        <nav class="navbar wrapper">
+            <div class="navLeft">
+                <div class="logo">
+                    <a href="index.html">Shion House</a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html" class="desktop">Blog</a>
+                        <input type="checkbox" name="" id="show-drop">
+                        <label for="show-drop" class="mobile">Blog +</label>
+                        <ul class="drop-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="index.html">Blog Details</a></li>
+                            <li><a href="index.html">Elements</a></li>
+                            <li><a href="index.html">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navRight">
+                <div class="navIcon">
+                    <ul>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-pinterest"></i></li>
+                    </ul>
+                </div>
+                <div class="navSearch">
+                    <div class="navOverlay" id="navOverlay">
+                        <span class="closeBtn" onclick="closeSearch()"><i class="fa fa-times"></i></span>
+                        <div class="overlay-input">
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" placeholder="search">
+                                    <button type="submit" class="searchBtn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <button type="submit" onclick="openSearch()" class="btn-search"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="navCart">
+                    <img src="/dist/image/card.svg" alt="card">
+                    <span>0</span>
+                </div>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ----------------/Header-section ---------------- -->
+
+    <!-- ----------------Main-section ---------------- -->
+    <main>
+        <!-- ---------- Hero-section ----------- -->
+        <section class="hero">
+            <div class="hero-container wrapper">
+                <h1>fashion <br> changing <br> always</h1>
+                <button>Shop Now</button>
+            </div>
+        </section>
+        <!-- ---------- /Hero-section ----------- -->
+
+        <!-- ---------- Shop-section ----------- -->
+        <section class="shop">
+            <div class="shop-container wrapper">
+                <div class="shop-items">
+                    <div class="shop-img">
+                        <img src="/dist/image/popular1.png" alt="girl">
+                    </div>
+                    <div class="shop-top">
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="shop-content">
+                        <h3>Glasses</h3>
+                    </div>
+                </div>
+                <div class="shop-items">
+                    <div class="shop-img">
+                        <img src="/dist/image/popular2.png" alt="watch">
+                    </div>
+                    <div class="shop-top">
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="shop-content">
+                        <h3>watches</h3>
+                    </div>
+                </div>
+                <div class="shop-items">
+                    <div class="shop-img">
+                        <img src="/dist/image/popular3.png" alt="woman">
+                    </div>
+                    <div class="shop-top">
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="shop-content">
+                        <h3>jackets</h3>
+                    </div>
+                </div>
+                <div class="shop-items">
+                    <div class="shop-img">
+                        <img src="/dist/image/popular4.png" alt="girl">
+                    </div>
+                    <div class="shop-top">
+                        <button>Shop Now</button>
+                    </div>
+                    <div class="shop-content">
+                        <h3>clothes</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------- /Shop-section ----------- -->
+
+        <!-- ---------- Arrival-section ----------- -->
+        <section class="arrival">
+            <div class="arrival-title">
+                <h2>new<br>arrival</h2>
+            </div>
+            <div class="arrival-container">
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival1.png" alt="woody">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival2.png" alt="warmmer">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival3.png" alt="shirt">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival4.png" alt="shirt">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival5.png" alt="t-shirt">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival6.png" alt="googles">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival7.png" alt="t-shirt">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+                <div class="arrival-items">
+                    <div class="arrival-img">
+                        <img src="/dist/image/arrival8.png" alt="shoes">
+                        <div class="image-overlay">
+                            <img src="/dist/image/favorit-card.png" alt="cart">
+                        </div>
+                    </div>
+                    <div class="arrival-content">
+                        <h3>Knitted Jumper</h3>
+                        <ul>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                            <li><i class="fa fa-star"></i></li>
+                        </ul>
+                        <p>$ 30.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrival-button">
+                <a href="#" class="arrivalBtn">Browse More</a>
+            </div>
+        </section>
+        <!-- ---------- /Arrival-section ----------- -->
+
+        <!-- ---------- Readabal-section ----------- -->
+        <section class="popular">
+            <div class="popular-container wrapper">
+                <div class="popular-item">
+                    <div class="popular-img">
+                        <div class="popular-content">
+                            <h2>collection houses our <br> first-ever</h2>
+                            <a href="#" class="popularBtn">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="read-container wrapper">
+                <div class="read-items">
+                    <div class="read-img">
+                        <img src="/dist/image/popular-imtes1.png" alt="girl">
+                    </div>
+                    <div class="read-content">
+                        <h3>Established fact that by the <br>
+                            readable content</h3>
+                        <a href="#" class="readBtn">Read More</a>
+                    </div>
+                </div>
+                <div class="read-items">
+                    <div class="read-img">
+                        <img src="/dist/image/popular-imtes2.png" alt="googles">
+                    </div>
+                    <div class="read-content">
+                        <h3>Established fact that by the <br>
+                            readable content</h3>
+                        <a href="#" class="readBtn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------- /Readabal-section ----------- -->
+
+        <!-- ---------- Feature-section ----------- -->
+        <section class="feature">
+            <div class="feature-container wrapper">
+                <div class="feature-items">
+                    <div class="feature-img">
+                        <img src="/dist/image/services1.svg" alt="delivary-car">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast & Free Delivery</h3>
+                        <p>Free delivery on all orders</p>
+                    </div>
+                </div>
+                <div class="feature-items">
+                    <div class="feature-img">
+                        <img src="/dist/image/services2.svg" alt="locker">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast & Free Delivery</h3>
+                        <p>Free delivery on all orders</p>
+                    </div>
+                </div>
+                <div class="feature-items">
+                    <div class="feature-img">
+                        <img src="/dist/image/services3.svg" alt="arrow">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast & Free Delivery</h3>
+                        <p>Free delivery on all orders</p>
+                    </div>
+                </div>
+                <div class="feature-items">
+                    <div class="feature-img">
+                        <img src="/dist/image/services4.svg" alt="24-hour">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast & Free Delivery</h3>
+                        <p>Free delivery on all orders</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------- /Feature-section ----------- -->
+    </main>
+    <!-- ----------------/Main-section ---------------- -->
+
+    <!-- ----------------Footer-section ---------------- -->
+    <footer>
+        <div class="footer-container wrapper">
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h3 class="foot-heading">Shion House</h3>
+                </div>
+                <div class="footer-content">
+                    <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros
+                        dolor interdum nulla.</p>
+                </div>
+                <div class="footer-Icon">
+                    <ul>
+                        <li><i class="fa fa-twitter"></i></li>
+                        <li><i class="fa fa-facebook"></i></li>
+                        <li><i class="fa fa-pinterest"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h3>Quick links</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Image Licensin</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h3>Shop Category</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Image Licensin</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h3>Partners</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Image Licensin</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-items">
+                <div class="footer-title">
+                    <h3>Get in touch</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">(89) 982-278 356</a></li>
+                        <li><a href="#">demo@colorlib.com</a></li>
+                        <li><a href="#">67/A, Colorlib, Green road, NYC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer wrapper">
+            <p>Copyright ©2023 All rights reserved | This template is made with <i class="fa fa-heart-o"></i> by
+                <span>Prince Kashyap</span></p>
+        </div>
+    </footer>
+    <!-- ----------------/Footer-section ---------------- -->
+
+    <script src="https://kit.fontawesome.com/edcd5c8c16.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
